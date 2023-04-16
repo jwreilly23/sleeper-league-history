@@ -54,7 +54,7 @@ body {
   width: 100%;
 }
 
-.task {
+.trade {
   background: #f4f4f4;
   margin: 5px;
   padding: 10px 20px;
@@ -65,7 +65,7 @@ body {
   border-left: 5px solid green;
 }
 
-.task h3 {
+.trade h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
