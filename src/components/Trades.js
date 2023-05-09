@@ -6,7 +6,7 @@ const Trades = ({ trades, onDelete }) => {
     return (
         <>
             {trades.map((trade) => (
-                <Trade key={trade.id} trade={trade} onDelete={onDelete} />
+                <Trade key={trade.transaction_id} trade={trade} onDelete={onDelete} />
             ))}
         </>
     )

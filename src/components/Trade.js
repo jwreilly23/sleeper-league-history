@@ -6,11 +6,12 @@ const Trade = ({ trade, onDelete }) => {
         <h3>
             {trade.text}
             <FaTimesCircle 
-                style={{color:'red', cursor:'pointer'}} onClick={() => onDelete(trade.id)}
+                style={{color:'red', cursor:'pointer'}} onClick={() => onDelete(trade.transaction_id)}
             />
         </h3>
-        <p>Sent: {trade.sent}</p>
-        <p>Received: {trade.received}</p>
+        <p>Trade between {trade.consenter_ids[0]} and {trade.consenter_ids[1]}</p>
+        <p>{trade.consenter_ids[0]} Sent: {trade.sent}</p>
+        <p>{trade.consenter_ids[0]} Received: {trade.received}</p>
     </div>
   )
 }
